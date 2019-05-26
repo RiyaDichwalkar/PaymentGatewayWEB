@@ -11,10 +11,9 @@
     <h3 align="left">Dear {{$user_name}}</h3>
     <h3 align="left">{{$user_email}},</h3>
      <h3 align="left">{{$invoice_title}},</h3>
-     <h3 align="left">{{$invoice_id}},</h3>
      <h3 align="left">Thank you for your generous help in the amount of ${{$invoice_amt}}.</h3>
      <h3 align="left">Sincerely,</h3>
-     <h3 align="left">Unity Foundation</h3>'
+     <h3 align="left">Grow Together Foundation</h3>'
      </div>
      </div>
      </div>
