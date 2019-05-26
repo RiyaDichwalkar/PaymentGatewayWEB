@@ -42,10 +42,10 @@ class DynamicPDFController extends Controller
       <h3 align="left">Dear '.$paymentdata['user_name'].',</h3>
       <h3 align="left">'.$paymentdata['user_email'].',</h3>
      <h3 align="left">'.$paymentdata['invoice_title'].',</h3>
-     <h3 align="left">'.$paymentdata['invoice_id'].',</h3>
+     <br>
      <h3 align="left">Thank you for your generous help in the amount of $'.$paymentdata['invoice_amt'].'</h3>
      <h3 align="left">Sincerely,</h3>
-     <h3 align="left">Unity Foundation</h3>';
+     <h3 align="left">Grow Together Foundation</h3>';
      return $output;
     }
     function send_email()

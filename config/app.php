@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Union Foundation'),
+    'name' => env('APP_NAME', 'Grow Together Foundation'),
 
     /*
     |--------------------------------------------------------------------------
@@ -53,7 +53,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://growtogether.herokuapp.com/'),
 
     'asset_url' => env('ASSET_URL', null),
 
