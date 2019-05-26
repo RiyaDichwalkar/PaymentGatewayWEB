@@ -39,8 +39,9 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
-
+    'debug' => env('APP_DEBUG', true),
+    
+    'log'=>'errorlog',
     /*
     |--------------------------------------------------------------------------
     | Application URL
@@ -119,7 +120,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY','base64:El/mbRmUn5fpK18/dGZGcifGxW1BTkgYj+hj23Fse2U='),
 
     'cipher' => 'AES-256-CBC',
 
@@ -228,5 +229,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'PDF' => Barryvdh\DomPDF\Facade::class,
     ],
+
 
 ];
