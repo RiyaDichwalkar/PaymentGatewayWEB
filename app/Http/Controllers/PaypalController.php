@@ -20,7 +20,7 @@ class PaypalController extends Controller
         'amount'     =>  'required|numeric',
        ]);
         $money=$request->get('amount');
-        dump($money);
+        //dump($money);
         $invoice_id = Invoice::count() + 1;
         $cart = $this->getCart($invoice_id,$money);
       
@@ -32,7 +32,7 @@ class PaypalController extends Controller
         $invoice->save();
 
         $response = $this->provider->setExpressCheckout($cart);
-        dump($response);
+        //dump($response);
         if (!$response['paypal_link']) {
           return redirect('/home')->with(['code' => 'danger', 'message' => 'Something went wrong with PayPal']);
           
